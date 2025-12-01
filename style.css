@@ -939,8 +939,11 @@ section::-webkit-scrollbar {
     display: none;
   }
   section {
-    overflow: visible !important;
-    height: fit-content;
+    /* overflow: visible !important; */
+    overflow-y: hidden;
+    /* height: auto;
+     */
+    min-height: 100vh;
     padding-top: 11.25rem;
   }
   .home-detail h1 {
@@ -955,6 +958,7 @@ section::-webkit-scrollbar {
     gap: 2rem;
     height: fit-content;
     text-align: center;
+    padding-top: 14rem;
   }
   .btn-sci {
     flex-direction: column-reverse;
