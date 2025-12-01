@@ -3,6 +3,8 @@ const logoLink = document.querySelector(".logo");
 const sections = document.querySelectorAll("section");
 const menuIcon = document.querySelector(".menu-icon");
 const nav = document.querySelector("header nav");
+const contact = document.querySelector(".last");
+const hire = document.querySelector(".fc");
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("ri-close-large-fill");
   nav.classList.toggle("active");
@@ -102,3 +104,9 @@ arrowLeft.addEventListener("click", () => {
   }
   activePortfolio();
 });
+hire.onclick = () => {
+  sections.forEach((section) => {
+    section.classList.remove("active");
+  });
+  contact.classList.add("active");
+};
