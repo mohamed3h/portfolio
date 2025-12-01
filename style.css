@@ -943,6 +943,7 @@ section::-webkit-scrollbar {
     justify-content: center;
     gap: 2rem;
     overflow-y: auto !important;
+    height: fit-content;
   }
   .home-img .img-box {
     width: 30rem;
