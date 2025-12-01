@@ -935,6 +935,9 @@ section::-webkit-scrollbar {
   .shape {
     display: none;
   }
+  section {
+    overflow: auto !important;
+  }
   .home {
     flex-direction: column-reverse;
     justify-content: center;
